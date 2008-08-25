@@ -1,0 +1,13 @@
+2008-08-25  dave
+
+	* [r4] README, README.xml:
+	  Removed README and added README.xml
+	* [r3] MANIFEST:
+	  Various changes
+	* [r2] lib/Parse/RPM/Spec.pm:
+	  Added documentation
+	* [r1] ., Build.PL, Changes, MANIFEST, README, lib, lib/Parse,
+	  lib/Parse/RPM, lib/Parse/RPM/Spec.pm, t, t/Parse-RPM-Spec.t,
+	  t/file.spec:
+	  Initial revision
+
