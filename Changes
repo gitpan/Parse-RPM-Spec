@@ -1,13 +1,49 @@
-2008-08-25  dave
+2009-07-25  Dave Cross  <dave@dave.org.uk>
 
-	* [r4] README, README.xml:
-	  Removed README and added README.xml
-	* [r3] MANIFEST:
-	  Various changes
-	* [r2] lib/Parse/RPM/Spec.pm:
-	  Added documentation
-	* [r1] ., Build.PL, Changes, MANIFEST, README, lib, lib/Parse,
-	  lib/Parse/RPM, lib/Parse/RPM/Spec.pm, t, t/Parse-RPM-Spec.t,
-	  t/file.spec:
-	  Initial revision
+	* Changes: Removed generated file.
+
+	* commit 1a2423f40ce248e8c4d4cde5d51aa1be2b691fdd
+
+2009-07-25  Dave Cross  <dave@dave.org.uk>
+
+	* README, README.xml: Changed README to text file.
+
+	* commit 19dc3a59080c208872c015d5b153a0881b78527d
+
+2009-07-25  Dave Cross  <dave@dave.org.uk>
+
+	* t/Parse-RPM-Spec.t: Changes to support the Moose version.
+
+	* commit e405f0ee4e1826041adef82dfd20f656226514c4
+
+2009-07-25  Dave Cross  <dave@dave.org.uk>
+
+	* lib/Parse/RPM/Spec.pm: Switch to using Moose.
+
+	* commit f9cee540f3c679f811275d01aadf951fe53cedc5
+
+2008-08-25  Dave Cross  <dave@dave.org.uk>
+
+	* README, README.xml: Removed README and added README.xml
+
+	* commit 507c63f62e3a59b588ede88c2de16da4a32ff2e5
+
+2008-08-25  Dave Cross  <dave@dave.org.uk>
+
+	* MANIFEST: Various changes
+
+	* commit bd4c969a2681b3afc359a24262a277371ce3c364
+
+2008-08-25  Dave Cross  <dave@dave.org.uk>
+
+	* lib/Parse/RPM/Spec.pm: Added documentation
+
+	* commit 4667b8dc72e564f4cd24b2c05974584bee93eb1b
+
+2008-08-25  Dave Cross  <dave@dave.org.uk>
+
+	* Build.PL, Changes, MANIFEST, README, lib/Parse/RPM/Spec.pm,
+	t/Parse-RPM-Spec.t, t/file.spec: Initial revision
+
+	* commit 598503e669f997688d34c9f754fdbbce63981696
 

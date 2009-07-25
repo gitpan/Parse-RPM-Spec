@@ -1,6 +1,6 @@
 ---
 name: Parse-RPM-Spec
-version: 0.01
+version: 0.02
 author:
   - 'Dave Cross <dave@mag-sol.com>'
 abstract: Perl extension to parse RPM spec files.
@@ -14,8 +14,8 @@ build_requires:
 provides:
   Parse::RPM::Spec:
     file: lib/Parse/RPM/Spec.pm
-    version: 0.01
-generated_by: Module::Build version 0.280801
+    version: 0.02
+generated_by: Module::Build version 0.32
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
   version: 1.2
