@@ -6,6 +6,7 @@ WriteMakefile
           'NAME' => 'Parse::RPM::Spec',
           'VERSION_FROM' => 'lib/Parse/RPM/Spec.pm',
           'PREREQ_PM' => {
+                           'Moose' => 0,
                            'Test::More' => 0
                          },
           'INSTALLDIRS' => 'site',
