@@ -1,81 +1,40 @@
-2009-08-30 18:32  Dave Cross  <dave@dave.org.uk>
+2009-10-27  Dave Cross <dave@dave.org.uk>
 
-	* Build.PL, lib/Parse/RPM/Spec.pm: Add Moose as a
-	requirement. Bump version number to 0.03 for release.
+  * Build.PL: Removed version defintion (use one from .pm)
 
-	* commit 29340d719a2e221759cc60556e2b73b9b424130c
+  * lib/Parse/RPM/Spec.pm, t/parse-rpm-spec.t: Version 0.04. Handle BuildArch
+  definition. Thanks to Steve Goldner for pointing out the omission.
 
-2009-07-25 21:32  Dave Cross  <dave@dave.org.uk>
+2009-08-30  Dave Cross <dave@dave.org.uk>
 
-	* lib/Parse/RPM/Spec.pm: Made file attribute mandatory.
+  * Build.PL, lib/Parse/RPM/Spec.pm: Add Moose as a requirement. Bump version
+  number to 0.03 for release.
 
-	* commit 943a19c396034ec91dd4db08dcec2ccc2a440c93
+2009-07-25  Dave Cross <dave@dave.org.uk>
 
-2009-07-25 20:51  Dave Cross  <dave@dave.org.uk>
+  * lib/Parse/RPM/Spec.pm: Made file attribute mandatory.
 
-	* MANIFEST, t/Parse-RPM-Spec.t, t/parse-rpm-spec.t: Renamed
-	test file.
+  * MANIFEST, t/Parse-RPM-Spec.t, t/parse-rpm-spec.t: Renamed test file.
 
-	* commit d24874157f2aa790ad422eb9b206ea1f33296206
+  * t/pod.t, t/pod_coverage.t: Added pod tests.
 
-2009-07-25 20:48  Dave Cross  <dave@dave.org.uk>
+  * Build.PL: Bump version number.
 
-	* t/pod.t, t/pod_coverage.t: Added pod tests.
+  * Changes: Removed generated file.
 
-	* commit cfaa91381e0d88d9ceb227691b745a3ceb0cde48
+  * README, README.xml: Changed README to text file.
 
-2009-07-25 20:42  Dave Cross  <dave@dave.org.uk>
+  * t/Parse-RPM-Spec.t: Changes to support the Moose version.
 
-	* Build.PL: Bump version number.
+  * lib/Parse/RPM/Spec.pm: Switch to using Moose.
 
-	* commit 88476575ebca440683b6f70ab9d253398e9d6fce
+2008-08-25  Dave Cross <dave@dave.org.uk>
 
-2009-07-25 20:41  Dave Cross  <dave@dave.org.uk>
+  * README, README.xml: Removed README and added README.xml
 
-	* Changes: Removed generated file.
+  * MANIFEST: Various changes
 
-	* commit 1a2423f40ce248e8c4d4cde5d51aa1be2b691fdd
+  * lib/Parse/RPM/Spec.pm: Added documentation
 
-2009-07-25 20:28  Dave Cross  <dave@dave.org.uk>
-
-	* README, README.xml: Changed README to text file.
-
-	* commit 19dc3a59080c208872c015d5b153a0881b78527d
-
-2009-07-25 20:20  Dave Cross  <dave@dave.org.uk>
-
-	* t/Parse-RPM-Spec.t: Changes to support the Moose version.
-
-	* commit e405f0ee4e1826041adef82dfd20f656226514c4
-
-2009-07-25 20:20  Dave Cross  <dave@dave.org.uk>
-
-	* lib/Parse/RPM/Spec.pm: Switch to using Moose.
-
-	* commit f9cee540f3c679f811275d01aadf951fe53cedc5
-
-2008-08-25 14:18  Dave Cross  <dave@dave.org.uk>
-
-	* README, README.xml: Removed README and added README.xml
-
-	* commit 507c63f62e3a59b588ede88c2de16da4a32ff2e5
-
-2008-08-25 14:18  Dave Cross  <dave@dave.org.uk>
-
-	* MANIFEST: Various changes
-
-	* commit bd4c969a2681b3afc359a24262a277371ce3c364
-
-2008-08-25 14:17  Dave Cross  <dave@dave.org.uk>
-
-	* lib/Parse/RPM/Spec.pm: Added documentation
-
-	* commit 4667b8dc72e564f4cd24b2c05974584bee93eb1b
-
-2008-08-25 11:37  Dave Cross  <dave@dave.org.uk>
-
-	* Build.PL, Changes, MANIFEST, README, lib/Parse/RPM/Spec.pm,
-	t/Parse-RPM-Spec.t, t/file.spec: Initial revision
-
-	* commit 598503e669f997688d34c9f754fdbbce63981696
-
+  * Build.PL, Changes, MANIFEST, README, lib/Parse/RPM/Spec.pm,
+  t/Parse-RPM-Spec.t, t/file.spec: Initial revision
