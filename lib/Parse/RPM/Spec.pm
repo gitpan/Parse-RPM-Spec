@@ -7,7 +7,7 @@ use warnings;
 use Carp;
 use Moose;
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 has file          => ( is => 'rw', isa => 'Str', required => 1 );
 has name          => ( is => 'rw', isa => 'Str' );
@@ -60,7 +60,7 @@ sub parse_file {
     /^Name:\s*(\S+)/         and $self->{name}      = $1;
     /^Version:\s*(\S+)/      and $self->{version}   = $1;
     /^Release:\s*(\S+)/      and $self->{release}   = $1;
-    /^Summary:\s*(\S+)/      and $self->{summary}   = $1;
+    /^Summary:\s*(.+)/       and $self->{summary}   = $1;
     /^License:\s*(.+)/       and $self->{license}   = $1;
     /^Group:\s*(\S+)/        and $self->{group}     = $1;
     /^URL:\s*(\S+)/          and $self->{url}       = $1;

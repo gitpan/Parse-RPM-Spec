@@ -1,12 +1,12 @@
 ---
 name: Parse-RPM-Spec
-version: 0.04
+version: 0.05
 author:
   - 'Dave Cross <dave@mag-sol.com>'
 abstract: Perl extension to parse RPM spec files.
 license: perl
 resources:
-  license: http://dev.perl.org/licenses/
+  license: ~
 requires:
   Moose: 0
   perl: 5.6.0
@@ -15,7 +15,7 @@ build_requires:
 provides:
   Parse::RPM::Spec:
     file: lib/Parse/RPM/Spec.pm
-    version: 0.04
+    version: 0.05
 generated_by: Module::Build version 0.32
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html

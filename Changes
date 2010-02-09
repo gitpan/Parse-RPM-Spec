@@ -1,3 +1,10 @@
+2010-02-09  Dave Cross <dave@dacross.(none)>
+
+  * lib/Parse/RPM/Spec.pm: Bump version.
+
+  * lib/Parse/RPM/Spec.pm, t/parse-rpm-spec.t: Parse the summary correctly.
+  Added a test for that.
+
 2009-10-27  Dave Cross <dave@dave.org.uk>
 
   * Build.PL: Removed version defintion (use one from .pm)
