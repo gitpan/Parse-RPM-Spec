@@ -1,3 +1,10 @@
+2010-02-10  Dave Cross <dave@dacross.(none)>
+
+  * lib/Parse/RPM/Spec.pm: Bump to version 0.06.
+
+  * lib/Parse/RPM/Spec.pm, t/file.spec, t/parse-rpm-spec.t: Added support for
+  Epoch field. And tests for it.
+
 2010-02-09  Dave Cross <dave@dacross.(none)>
 
   * lib/Parse/RPM/Spec.pm: Bump version.
