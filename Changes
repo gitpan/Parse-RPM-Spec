@@ -1,3 +1,9 @@
+2010-02-17  Dave Cross <dave@dacross.(none)>
+
+  * lib/Parse/RPM/Spec.pm: Version 0.07
+
+  * lib/Parse/RPM/Spec.pm: Added some docs to placate Test::Pod::Coverage.
+
 2010-02-10  Dave Cross <dave@dacross.(none)>
 
   * lib/Parse/RPM/Spec.pm: Bump to version 0.06.

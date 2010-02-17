@@ -15,10 +15,10 @@ name: Parse-RPM-Spec
 provides:
   Parse::RPM::Spec:
     file: lib/Parse/RPM/Spec.pm
-    version: 0.06
+    version: 0.07
 requires:
   Moose: 0
   perl: v5.6.0
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.06
+version: 0.07
