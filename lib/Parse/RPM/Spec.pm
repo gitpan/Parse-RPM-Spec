@@ -7,7 +7,7 @@ use warnings;
 use Carp;
 use Moose;
 
-our $VERSION = '0.07';
+our $VERSION = '0.08';
 
 has file          => ( is => 'rw', isa => 'Str', required => 1 );
 has name          => ( is => 'rw', isa => 'Str' );
@@ -18,7 +18,7 @@ has summary       => ( is => 'rw', isa => 'Str' );
 has license       => ( is => 'rw', isa => 'Str' );
 has group         => ( is => 'rw', isa => 'Str' );
 has url           => ( is => 'rw', isa => 'Str' );
-has source        => ( is => 'rw', isa => 'Str' );
+has source        => ( is => 'rw', isa => 'ArrayRef[Str]' );
 has buildroot     => ( is => 'rw', isa => 'Str' );
 has buildarch     => ( is => 'rw', isa => 'Str' );
 has buildrequires => ( is => 'rw', isa => 'ArrayRef[Str]' );
@@ -66,7 +66,7 @@ sub parse_file {
     /^License:\s*(.+)/       and $self->{license}   = $1;
     /^Group:\s*(\S+)/        and $self->{group}     = $1;
     /^URL:\s*(\S+)/          and $self->{url}       = $1;
-    /^Source0?:\s*(\S+)/     and $self->{source}    = $1;
+    /^Source\d*:\s*(\S+)/    and push @{$self->{source}}, $1;
     /^BuildRoot:\s*(\S+)/    and $self->{buildroot} = $1;
     /^BuildArch:\s*(\S+)/    and $self->{buildarch} = $1;
 
@@ -131,9 +131,9 @@ yourself.
 =head2 $spec->file, $spec->name, $spec->version, $spec->epoch, $spec->release, $spec->summary, $spec->license, $spec->group, $spec->url, $spec->source, $spec->buildroot, $spec->buildarch, $spec->buildrequires, $spec->requires
 
 Attribute accessors for the spec file object. Each one returns a piece of
-information from the spec file header. The C<buildrequires> and C<requires>
-methods are slightly different. Because these keys can have multiple values,
-they return a reference to an array of values.
+information from the spec file header. The C<source>, C<buildrequires>
+and C<requires> methods are slightly different. Because these keys can have
+multiple values, they return a reference to an array of values.
 
 =head2 Parse::RPM::Spec->meta
 
